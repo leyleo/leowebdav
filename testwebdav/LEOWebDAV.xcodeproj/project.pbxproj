@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF47209416885CB60006B8B1 /* LEOWebDAVUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = AF47209316885CB60006B8B1 /* LEOWebDAVUtility.m */; };
+		AF4720AD168863020006B8B1 /* LEOContentTypeConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4720AC168863020006B8B1 /* LEOContentTypeConvert.m */; };
+		AF4720AF1688632F0006B8B1 /* extentToMIME.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF4720AE1688632F0006B8B1 /* extentToMIME.plist */; };
+		AF4720B2168864710006B8B1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF4720B0168864550006B8B1 /* Default-568h@2x.png */; };
+		AF4720B4168864C50006B8B1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF4720B3168864C50006B8B1 /* Default@2x.png */; };
+		AF4720B6168864C90006B8B1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AF4720B5168864C90006B8B1 /* Default.png */; };
+		AF4720B8168864E40006B8B1 /* 57.png in Resources */ = {isa = PBXBuildFile; fileRef = AF4720B7168864E40006B8B1 /* 57.png */; };
+		AF4720BA168864E70006B8B1 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = AF4720B9168864E70006B8B1 /* 114.png */; };
+		AF91653D1648AF2B00918E3F /* LEOWebDAVUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF91653C1648AF2B00918E3F /* LEOWebDAVUploadRequest.m */; };
+		AF9165411648B1E300918E3F /* LEOWebDAVMakeCollectionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9165401648B1E300918E3F /* LEOWebDAVMakeCollectionRequest.m */; };
+		AF9165441648B31F00918E3F /* LEOWebDAVDeleteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9165431648B31F00918E3F /* LEOWebDAVDeleteRequest.m */; };
+		AFC8624A163F790F00E31892 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC86249163F790F00E31892 /* UIKit.framework */; };
+		AFC8624C163F790F00E31892 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC8624B163F790F00E31892 /* Foundation.framework */; };
+		AFC8624E163F790F00E31892 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC8624D163F790F00E31892 /* CoreGraphics.framework */; };
+		AFC86254163F790F00E31892 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFC86252163F790F00E31892 /* InfoPlist.strings */; };
+		AFC86256163F790F00E31892 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC86255163F790F00E31892 /* main.m */; };
+		AFC8625A163F790F00E31892 /* LEOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC86259163F790F00E31892 /* LEOAppDelegate.m */; };
+		AFC8630C163FABCC00E31892 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC8630B163FABCB00E31892 /* Security.framework */; };
+		AFC86325163FBEB300E31892 /* LEOWebDAVClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC86324163FBEB300E31892 /* LEOWebDAVClient.m */; };
+		AFC86328163FC14400E31892 /* LEOWebDAVBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC86327163FC14300E31892 /* LEOWebDAVBaseRequest.m */; };
+		AFC8632B163FC96E00E31892 /* LEOWebDAVRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC8632A163FC96E00E31892 /* LEOWebDAVRequest.m */; };
+		AFC8632F163FE79100E31892 /* LEOWebDAVPropertyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC8632E163FE79100E31892 /* LEOWebDAVPropertyRequest.m */; };
+		AFCCFC8E1651049700B68939 /* LEOWebDAVCopyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCCFC8D1651049700B68939 /* LEOWebDAVCopyRequest.m */; };
+		AFCCFC921651068900B68939 /* LEOWebDAVMoveRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCCFC911651068900B68939 /* LEOWebDAVMoveRequest.m */; };
+		AFFF40401640C3B90027798C /* LEOWebDAVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFF403F1640C3B80027798C /* LEOWebDAVParser.m */; };
+		AFFF40441640C6430027798C /* LEOWebDAVItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFF40431640C6430027798C /* LEOWebDAVItem.m */; };
+		AFFF40471640FC2F0027798C /* LEOWebDAVDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFF40461640FC2E0027798C /* LEOWebDAVDownloadRequest.m */; };
+		AFFF405116410F040027798C /* LEOWebDAVURL.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFF405016410F030027798C /* LEOWebDAVURL.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AF47209216885CB60006B8B1 /* LEOWebDAVUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOWebDAVUtility.h; path = LEOWebDAV/LEOWebDAVUtility.h; sourceTree = "<group>"; };
+		AF47209316885CB60006B8B1 /* LEOWebDAVUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOWebDAVUtility.m; path = LEOWebDAV/LEOWebDAVUtility.m; sourceTree = "<group>"; };
+		AF4720AB168863020006B8B1 /* LEOContentTypeConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOContentTypeConvert.h; path = LEOWebDAV/LEOContentTypeConvert.h; sourceTree = "<group>"; };
+		AF4720AC168863020006B8B1 /* LEOContentTypeConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOContentTypeConvert.m; path = LEOWebDAV/LEOContentTypeConvert.m; sourceTree = "<group>"; };
+		AF4720AE1688632F0006B8B1 /* extentToMIME.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = extentToMIME.plist; sourceTree = "<group>"; };
+		AF4720B0168864550006B8B1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AF4720B3168864C50006B8B1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AF4720B5168864C90006B8B1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AF4720B7168864E40006B8B1 /* 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57.png; sourceTree = "<group>"; };
+		AF4720B9168864E70006B8B1 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
+		AF91653B1648AF2B00918E3F /* LEOWebDAVUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOWebDAVUploadRequest.h; path = LEOWebDAV/LEOWebDAVUploadRequest.h; sourceTree = "<group>"; };
+		AF91653C1648AF2B00918E3F /* LEOWebDAVUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOWebDAVUploadRequest.m; path = LEOWebDAV/LEOWebDAVUploadRequest.m; sourceTree = "<group>"; };
+		AF91653F1648B1E300918E3F /* LEOWebDAVMakeCollectionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOWebDAVMakeCollectionRequest.h; path = LEOWebDAV/LEOWebDAVMakeCollectionRequest.h; sourceTree = "<group>"; };
+		AF9165401648B1E300918E3F /* LEOWebDAVMakeCollectionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOWebDAVMakeCollectionRequest.m; path = LEOWebDAV/LEOWebDAVMakeCollectionRequest.m; sourceTree = "<group>"; };
+		AF9165421648B31F00918E3F /* LEOWebDAVDeleteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOWebDAVDeleteRequest.h; path = LEOWebDAV/LEOWebDAVDeleteRequest.h; sourceTree = "<group>"; };
+		AF9165431648B31F00918E3F /* LEOWebDAVDeleteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOWebDAVDeleteRequest.m; path = LEOWebDAV/LEOWebDAVDeleteRequest.m; sourceTree = "<group>"; };
+		AFC86245163F790F00E31892 /* LEOWebDAV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEOWebDAV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC86249163F790F00E31892 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AFC8624B163F790F00E31892 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AFC8624D163F790F00E31892 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AFC86251163F790F00E31892 /* LEOWebDAV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LEOWebDAV-Info.plist"; sourceTree = "<group>"; };
+		AFC86253163F790F00E31892 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AFC86255163F790F00E31892 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFC86257163F790F00E31892 /* LEOWebDAV-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LEOWebDAV-Prefix.pch"; sourceTree = "<group>"; };
+		AFC86258163F790F00E31892 /* LEOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEOAppDelegate.h; sourceTree = "<group>"; };
+		AFC86259163F790F00E31892 /* LEOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEOAppDelegate.m; sourceTree = "<group>"; };
+		AFC8630B163FABCB00E31892 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AFC86323163FBEB300E31892 /* LEOWebDAVClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOWebDAVClient.h; path = LEOWebDAV/LEOWebDAVClient.h; sourceTree = "<group>"; };
+		AFC86324163FBEB300E31892 /* LEOWebDAVClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOWebDAVClient.m; path = LEOWebDAV/LEOWebDAVClient.m; sourceTree = "<group>"; };
+		AFC86326163FC14300E31892 /* LEOWebDAVBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOWebDAVBaseRequest.h; path = LEOWebDAV/LEOWebDAVBaseRequest.h; sourceTree = "<group>"; };
+		AFC86327163FC14300E31892 /* LEOWebDAVBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOWebDAVBaseRequest.m; path = LEOWebDAV/LEOWebDAVBaseRequest.m; sourceTree = "<group>"; };
+		AFC86329163FC96D00E31892 /* LEOWebDAVRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOWebDAVRequest.h; path = LEOWebDAV/LEOWebDAVRequest.h; sourceTree = "<group>"; };
+		AFC8632A163FC96E00E31892 /* LEOWebDAVRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOWebDAVRequest.m; path = LEOWebDAV/LEOWebDAVRequest.m; sourceTree = "<group>"; };
+		AFC8632C163FCFA800E31892 /* LEOWebDAVDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOWebDAVDefines.h; path = LEOWebDAV/LEOWebDAVDefines.h; sourceTree = "<group>"; };
+		AFC8632D163FE79100E31892 /* LEOWebDAVPropertyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOWebDAVPropertyRequest.h; path = LEOWebDAV/LEOWebDAVPropertyRequest.h; sourceTree = "<group>"; };
+		AFC8632E163FE79100E31892 /* LEOWebDAVPropertyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOWebDAVPropertyRequest.m; path = LEOWebDAV/LEOWebDAVPropertyRequest.m; sourceTree = "<group>"; };
+		AFCCFC8C1651049700B68939 /* LEOWebDAVCopyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOWebDAVCopyRequest.h; path = LEOWebDAV/LEOWebDAVCopyRequest.h; sourceTree = "<group>"; };
+		AFCCFC8D1651049700B68939 /* LEOWebDAVCopyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOWebDAVCopyRequest.m; path = LEOWebDAV/LEOWebDAVCopyRequest.m; sourceTree = "<group>"; };
+		AFCCFC901651068900B68939 /* LEOWebDAVMoveRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOWebDAVMoveRequest.h; path = LEOWebDAV/LEOWebDAVMoveRequest.h; sourceTree = "<group>"; };
+		AFCCFC911651068900B68939 /* LEOWebDAVMoveRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOWebDAVMoveRequest.m; path = LEOWebDAV/LEOWebDAVMoveRequest.m; sourceTree = "<group>"; };
+		AFFF403E1640C3B80027798C /* LEOWebDAVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOWebDAVParser.h; path = LEOWebDAV/LEOWebDAVParser.h; sourceTree = "<group>"; };
+		AFFF403F1640C3B80027798C /* LEOWebDAVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOWebDAVParser.m; path = LEOWebDAV/LEOWebDAVParser.m; sourceTree = "<group>"; };
+		AFFF40421640C6430027798C /* LEOWebDAVItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOWebDAVItem.h; path = LEOWebDAV/LEOWebDAVItem.h; sourceTree = "<group>"; };
+		AFFF40431640C6430027798C /* LEOWebDAVItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOWebDAVItem.m; path = LEOWebDAV/LEOWebDAVItem.m; sourceTree = "<group>"; };
+		AFFF40451640FC2E0027798C /* LEOWebDAVDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOWebDAVDownloadRequest.h; path = LEOWebDAV/LEOWebDAVDownloadRequest.h; sourceTree = "<group>"; };
+		AFFF40461640FC2E0027798C /* LEOWebDAVDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOWebDAVDownloadRequest.m; path = LEOWebDAV/LEOWebDAVDownloadRequest.m; sourceTree = "<group>"; };
+		AFFF404F16410F030027798C /* LEOWebDAVURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOWebDAVURL.h; path = LEOWebDAV/LEOWebDAVURL.h; sourceTree = "<group>"; };
+		AFFF405016410F030027798C /* LEOWebDAVURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOWebDAVURL.m; path = LEOWebDAV/LEOWebDAVURL.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFC86242163F790F00E31892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC8630C163FABCC00E31892 /* Security.framework in Frameworks */,
+				AFC8624A163F790F00E31892 /* UIKit.framework in Frameworks */,
+				AFC8624C163F790F00E31892 /* Foundation.framework in Frameworks */,
+				AFC8624E163F790F00E31892 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFC8623A163F790F00E31892 = {
+			isa = PBXGroup;
+			children = (
+				AF4720B9168864E70006B8B1 /* 114.png */,
+				AF4720B7168864E40006B8B1 /* 57.png */,
+				AF4720B5168864C90006B8B1 /* Default.png */,
+				AF4720B3168864C50006B8B1 /* Default@2x.png */,
+				AF4720B0168864550006B8B1 /* Default-568h@2x.png */,
+				AFC8624F163F790F00E31892 /* LEOWebDAV */,
+				AFC86248163F790F00E31892 /* Frameworks */,
+				AFC86246163F790F00E31892 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFC86246163F790F00E31892 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFC86245163F790F00E31892 /* LEOWebDAV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFC86248163F790F00E31892 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFC8630B163FABCB00E31892 /* Security.framework */,
+				AFC86249163F790F00E31892 /* UIKit.framework */,
+				AFC8624B163F790F00E31892 /* Foundation.framework */,
+				AFC8624D163F790F00E31892 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFC8624F163F790F00E31892 /* LEOWebDAV */ = {
+			isa = PBXGroup;
+			children = (
+				AFC86322163FBDCF00E31892 /* LEOWebDAV */,
+				AFC86258163F790F00E31892 /* LEOAppDelegate.h */,
+				AFC86259163F790F00E31892 /* LEOAppDelegate.m */,
+				AFC86250163F790F00E31892 /* Supporting Files */,
+			);
+			name = LEOWebDAV;
+			path = testwebdav;
+			sourceTree = "<group>";
+		};
+		AFC86250163F790F00E31892 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF4720AE1688632F0006B8B1 /* extentToMIME.plist */,
+				AFC86251163F790F00E31892 /* LEOWebDAV-Info.plist */,
+				AFC86252163F790F00E31892 /* InfoPlist.strings */,
+				AFC86255163F790F00E31892 /* main.m */,
+				AFC86257163F790F00E31892 /* LEOWebDAV-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFC86322163FBDCF00E31892 /* LEOWebDAV */ = {
+			isa = PBXGroup;
+			children = (
+				AF4720AB168863020006B8B1 /* LEOContentTypeConvert.h */,
+				AF4720AC168863020006B8B1 /* LEOContentTypeConvert.m */,
+				AFC86323163FBEB300E31892 /* LEOWebDAVClient.h */,
+				AFC86324163FBEB300E31892 /* LEOWebDAVClient.m */,
+				AFC86326163FC14300E31892 /* LEOWebDAVBaseRequest.h */,
+				AFC86327163FC14300E31892 /* LEOWebDAVBaseRequest.m */,
+				AFC86329163FC96D00E31892 /* LEOWebDAVRequest.h */,
+				AFC8632A163FC96E00E31892 /* LEOWebDAVRequest.m */,
+				AFC8632C163FCFA800E31892 /* LEOWebDAVDefines.h */,
+				AFC8632D163FE79100E31892 /* LEOWebDAVPropertyRequest.h */,
+				AFC8632E163FE79100E31892 /* LEOWebDAVPropertyRequest.m */,
+				AFFF403E1640C3B80027798C /* LEOWebDAVParser.h */,
+				AFFF403F1640C3B80027798C /* LEOWebDAVParser.m */,
+				AFFF40421640C6430027798C /* LEOWebDAVItem.h */,
+				AFFF40431640C6430027798C /* LEOWebDAVItem.m */,
+				AFFF40451640FC2E0027798C /* LEOWebDAVDownloadRequest.h */,
+				AFFF40461640FC2E0027798C /* LEOWebDAVDownloadRequest.m */,
+				AFFF404F16410F030027798C /* LEOWebDAVURL.h */,
+				AFFF405016410F030027798C /* LEOWebDAVURL.m */,
+				AF91653B1648AF2B00918E3F /* LEOWebDAVUploadRequest.h */,
+				AF91653C1648AF2B00918E3F /* LEOWebDAVUploadRequest.m */,
+				AF91653F1648B1E300918E3F /* LEOWebDAVMakeCollectionRequest.h */,
+				AF9165401648B1E300918E3F /* LEOWebDAVMakeCollectionRequest.m */,
+				AF9165421648B31F00918E3F /* LEOWebDAVDeleteRequest.h */,
+				AF9165431648B31F00918E3F /* LEOWebDAVDeleteRequest.m */,
+				AFCCFC8C1651049700B68939 /* LEOWebDAVCopyRequest.h */,
+				AFCCFC8D1651049700B68939 /* LEOWebDAVCopyRequest.m */,
+				AFCCFC901651068900B68939 /* LEOWebDAVMoveRequest.h */,
+				AFCCFC911651068900B68939 /* LEOWebDAVMoveRequest.m */,
+				AF47209216885CB60006B8B1 /* LEOWebDAVUtility.h */,
+				AF47209316885CB60006B8B1 /* LEOWebDAVUtility.m */,
+			);
+			name = LEOWebDAV;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFC86244163F790F00E31892 /* LEOWebDAV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFC86263163F790F00E31892 /* Build configuration list for PBXNativeTarget "LEOWebDAV" */;
+			buildPhases = (
+				AFC86241163F790F00E31892 /* Sources */,
+				AFC86242163F790F00E31892 /* Frameworks */,
+				AFC86243163F790F00E31892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LEOWebDAV;
+			productName = testwebdav;
+			productReference = AFC86245163F790F00E31892 /* LEOWebDAV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFC8623C163F790F00E31892 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LEO;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = SAE;
+			};
+			buildConfigurationList = AFC8623F163F790F00E31892 /* Build configuration list for PBXProject "LEOWebDAV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AFC8623A163F790F00E31892;
+			productRefGroup = AFC86246163F790F00E31892 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFC86244163F790F00E31892 /* LEOWebDAV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFC86243163F790F00E31892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC86254163F790F00E31892 /* InfoPlist.strings in Resources */,
+				AF4720AF1688632F0006B8B1 /* extentToMIME.plist in Resources */,
+				AF4720B2168864710006B8B1 /* Default-568h@2x.png in Resources */,
+				AF4720B4168864C50006B8B1 /* Default@2x.png in Resources */,
+				AF4720B6168864C90006B8B1 /* Default.png in Resources */,
+				AF4720B8168864E40006B8B1 /* 57.png in Resources */,
+				AF4720BA168864E70006B8B1 /* 114.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFC86241163F790F00E31892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC86256163F790F00E31892 /* main.m in Sources */,
+				AFC8625A163F790F00E31892 /* LEOAppDelegate.m in Sources */,
+				AFC86325163FBEB300E31892 /* LEOWebDAVClient.m in Sources */,
+				AFC86328163FC14400E31892 /* LEOWebDAVBaseRequest.m in Sources */,
+				AFC8632B163FC96E00E31892 /* LEOWebDAVRequest.m in Sources */,
+				AFC8632F163FE79100E31892 /* LEOWebDAVPropertyRequest.m in Sources */,
+				AFFF40401640C3B90027798C /* LEOWebDAVParser.m in Sources */,
+				AFFF40441640C6430027798C /* LEOWebDAVItem.m in Sources */,
+				AFFF40471640FC2F0027798C /* LEOWebDAVDownloadRequest.m in Sources */,
+				AFFF405116410F040027798C /* LEOWebDAVURL.m in Sources */,
+				AF91653D1648AF2B00918E3F /* LEOWebDAVUploadRequest.m in Sources */,
+				AF9165411648B1E300918E3F /* LEOWebDAVMakeCollectionRequest.m in Sources */,
+				AF9165441648B31F00918E3F /* LEOWebDAVDeleteRequest.m in Sources */,
+				AFCCFC8E1651049700B68939 /* LEOWebDAVCopyRequest.m in Sources */,
+				AFCCFC921651068900B68939 /* LEOWebDAVMoveRequest.m in Sources */,
+				AF47209416885CB60006B8B1 /* LEOWebDAVUtility.m in Sources */,
+				AF4720AD168863020006B8B1 /* LEOContentTypeConvert.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AFC86252163F790F00E31892 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFC86253163F790F00E31892 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFC86261163F790F00E31892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AFC86262163F790F00E31892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFC86264163F790F00E31892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "testwebdav/LEOWebDAV-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "testwebdav/LEOWebDAV-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = LEOWebDAV;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AFC86265163F790F00E31892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "testwebdav/LEOWebDAV-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "testwebdav/LEOWebDAV-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = LEOWebDAV;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFC8623F163F790F00E31892 /* Build configuration list for PBXProject "LEOWebDAV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC86261163F790F00E31892 /* Debug */,
+				AFC86262163F790F00E31892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFC86263163F790F00E31892 /* Build configuration list for PBXNativeTarget "LEOWebDAV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC86264163F790F00E31892 /* Debug */,
+				AFC86265163F790F00E31892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFC8623C163F790F00E31892 /* Project object */;
+}
