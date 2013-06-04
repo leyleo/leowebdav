@@ -149,19 +149,17 @@
 -(NSString *)concatenatedURLWithPath:(NSString *)thePath
 {
     NSParameterAssert(thePath!=nil);
-    
-//    LEOWebDAVURL *webURL=[[[LEOWebDAVURL alloc] initWithHost:[self.rootURL absoluteString] andHref:thePath] autorelease];
-    NSString *_host=[self.rootURL absoluteString];
+
+    NSString *relativeRoot=[self.rootURL relativePath];
     NSString *temp=[NSString stringWithString:thePath];
-    if([thePath hasPrefix:[NSString stringWithFormat:@"/%@", [_host lastPathComponent]]]) {
-        temp = [temp substringFromIndex:[_host lastPathComponent].length+1];
+    if([thePath hasPrefix:relativeRoot]) {
+        temp = [temp substringFromIndex:relativeRoot.length];
     }
     if([temp rangeOfString:@"%"].length == 0) {
         temp = [temp stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     }
     _relativePath=[[NSString alloc] initWithFormat:@"%@",temp];
-//    NSLog(@"relative:%@",_relativePath);
-    return [_host stringByAppendingString:_relativePath];
+    return [[self.rootURL absoluteString] stringByAppendingString:_relativePath];
 }
 
 - (NSMutableURLRequest *)newRequestWithPath:(NSString *)path method:(NSString *)method
