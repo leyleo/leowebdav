@@ -57,13 +57,6 @@
     return nil;
 }
 
--(void)dealloc
-{
-    [_path release];
-    [_data release];
-    [_relativePath release];
-    [super dealloc];
-}
 #pragma mark - Private methods
 - (BOOL)isExecuting {
 	return _executing;
@@ -170,7 +163,6 @@
 	[request setHTTPMethod:method];
 	[request setCachePolicy:NSURLRequestReloadIgnoringLocalCacheData];
     [request setTimeoutInterval:kWebDAVDefalutTimeOut];
-    [url release];
 	return request;
 }
 #pragma mark - Connection Delegate
@@ -195,8 +187,6 @@
 			[self cancelWithCode:code];
             return;
 		}
-        
-        [_data release];
         _data = nil;
         _data = [[NSMutableData alloc] init];
         [_data setLength:0];

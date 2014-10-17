@@ -36,11 +36,7 @@
     }
     return self;
 }
--(void)dealloc
-{
-    [_url release];
-    [super dealloc];
-}
+
 -(NSString *)host
 {
     return [NSString stringWithFormat:@"%@://%@", [_url scheme], [_url host]];

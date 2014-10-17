@@ -37,7 +37,7 @@
 	else
 		[req setValue:@"F" forHTTPHeaderField:@"Overwrite"];
 	
-	return [req autorelease];
+	return req;
 }
 
 -(id)resultForData:(NSData *)data

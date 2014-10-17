@@ -25,11 +25,6 @@ static NSString *const kExtentToMIMEPlistFileName   =   @"extentToMIME.plist";
     }
     return self;
 }
--(void)dealloc
-{
-    [_convertDic release];
-    [super dealloc];
-}
 
 +(LEOExtensionToMIME *)getInstance
 {

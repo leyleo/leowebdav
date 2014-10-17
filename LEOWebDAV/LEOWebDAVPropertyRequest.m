@@ -52,7 +52,6 @@
     LEOWebDAVParser *parser=[[LEOWebDAVParser alloc] initWithData:data];
     NSError *error = nil;
 	NSArray *items = [parser parse:&error];
-	[parser release];
 	if (error) {
         #ifdef DEBUG
         NSLog(@"XML Parse error: %@", error);

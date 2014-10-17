@@ -21,7 +21,10 @@
 @property(readonly) NSUInteger requestCount;
 @property(assign) NSInteger maxRequestsCount;
 
--(id) initWithRootURL:(NSURL *)url andUserName:(NSString *)name andPassword:(NSString*)password;
+-(id)initWithRootURL:(NSURL *)url andUserName:(NSString *)name andPassword:(NSString*)password;
+-(void)setupRootURL:(NSURL *)url
+        andUserName:(NSString *)name
+        andPassword:(NSString*)password;
 -(void)enqueueRequest:(LEOWebDAVBaseRequest*)enRequest;
 -(void)cancelRequest;
 -(void)cancelDelegate;

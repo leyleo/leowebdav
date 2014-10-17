@@ -57,18 +57,6 @@
 	return self;
 }
 
-
--(void)dealloc
-{
-    [_rootURL release];
-    [_relativeHref release];
-    [_location release];
-    [_contentSize release];
-    [_cacheName release];
-    
-    [super dealloc];
-}
-
 - (NSString *)description {
 	return [NSString stringWithFormat:@"href = %@; modificationDate = %@; contentLength = %lld; "
             @"contentType = %@; creationDate = %@; resourceType = %d; displayName=%@",

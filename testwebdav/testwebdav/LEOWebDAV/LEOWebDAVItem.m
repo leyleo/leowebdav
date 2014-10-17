@@ -57,18 +57,6 @@
 	return self;
 }
 
-
--(void)dealloc
-{
-    [_rootURL release];
-    [_relativeHref release];
-    [_location release];
-    [_contentSize release];
-    [_cacheName release];
-    
-    [super dealloc];
-}
-
 - (NSString *)description {
 	return [NSString stringWithFormat:@"href = %@; modificationDate = %@; contentLength = %lld; "
             @"contentType = %@; creationDate = %@; resourceType = %d; displayName=%@",
@@ -88,9 +76,10 @@
 {
     _rootURL=[_rootUrl copy];
     NSString *root=[_rootURL absoluteString];
+    NSString *relativeRoot=[_rootURL relativePath];
     NSString *temp=[NSString stringWithString:href];
-    if ([href hasPrefix:[NSString stringWithFormat:@"/%@", [root lastPathComponent]]]) {
-        temp=[temp substringFromIndex:[root lastPathComponent].length +1];
+    if ([href hasPrefix:relativeRoot]) {
+        temp=[temp substringFromIndex:relativeRoot.length ];
     }
     if([root rangeOfString:@"%"].length == 0) {
         temp = [temp stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];

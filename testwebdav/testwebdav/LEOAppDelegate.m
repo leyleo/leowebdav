@@ -7,20 +7,11 @@
 //
 
 #import "LEOAppDelegate.h"
-//#import "DAVCredentials.h"
-//#import "DAVSession.h"
-//#import "DAVRequests.h"
 #import "LEOWebDAVClient.h"
 #import "LEOWebDAVPropertyRequest.h"
 #import "LEOWebDAVDownloadRequest.h"
 
 @implementation LEOAppDelegate
-
-- (void)dealloc
-{
-    [_window release];
-    [super dealloc];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

@@ -35,12 +35,6 @@
 	return self;
 }
 
--(void)dealloc
-{
-    [_items release];
-    [_parser release];
-    [super dealloc];
-}
 
 -(NSArray *)parse:(NSError **)error
 {
@@ -62,7 +56,7 @@
         dataFormatterISO.timeZone=[NSTimeZone timeZoneForSecondsFromGMT:8];
     }
 
-    [dataFormatterISO setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
+    [dataFormatterISO setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"];
     
     return [self stringForDate:[dataFormatterISO dateFromString:dateString]];
 }
@@ -74,7 +68,7 @@
         dataFormatterRFC = [[NSDateFormatter alloc] init];
         [dataFormatterRFC setDateFormat:@"EEE',' dd MMM yyyy HH':'mm':'ss z"];
         [dataFormatterRFC setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"GMT"]];
-        dataFormatterRFC.locale=[[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"] autorelease];
+        dataFormatterRFC.locale=[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
     }
         // Fri, 26 Oct 2012 14:40:17 GMT
     NSDate *date=[dataFormatterRFC dateFromString:dateString];
